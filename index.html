@@ -4,261 +4,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Botiguy | Tienda Virtual</title>
-  <meta name="description" content="Botiguy - Tienda virtual con productos variados: Peluquería y Barbería, Belleza para Mascotas, Automóviles y más. ¡Encuentra todo en un solo lugar!">
-  <link rel="icon" href="https://img.icons8.com/color/96/online-store.png" type="image/png">
-  <style>
-    :root {
-      --azul: #1e88e5;
-      --azul-oscuro: #0d47a1;
-      --gris-fondo: #f7f8fa;
-      --texto: #333;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: var(--gris-fondo);
-      color: var(--texto);
-    }
-
-    /* ---------- HEADER ---------- */
-    header {
-      position: relative;
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
-                  url('https://images.unsplash.com/photo-1561715276-a2d4b15b07e7?auto=format&fit=crop&w=1500&q=80');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    header p {
-      font-size: 1.2em;
-      margin-bottom: 25px;
-    }
-
-    .boton-tienda {
-      background: var(--azul);
-      color: white;
-      padding: 15px 30px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    .boton-tienda:hover {
-      background: var(--azul-oscuro);
-    }
-
-    /* ---------- NAV ---------- */
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-      background: white;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 15px;
-    }
-
-    nav a {
-      color: var(--azul);
-      text-decoration: none;
-      font-weight: 600;
-      padding: 8px 16px;
-      border: 2px solid var(--azul);
-      border-radius: 6px;
-      transition: all 0.3s ease;
-    }
-
-    nav a:hover {
-      background: var(--azul);
-      color: white;
-    }
-
-    /* ---------- SECCIONES ---------- */
-    section {
-      max-width: 1200px;
-      margin: 50px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    section h2 {
-      text-align: center;
-      color: var(--azul);
-      margin-bottom: 20px;
-    }
-
-    .productos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 25px;
-    }
-
-    .card {
-      width: 260px;
-      background: #fdfdfd;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card img {
-      width: 100%;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      height: 180px;
-      object-fit: cover;
-    }
-
-    .card-content {
-      padding: 15px;
-    }
-
-    .card-content h3 {
-      color: var(--azul);
-      margin-top: 0;
-    }
-
-    footer {
-      background: var(--azul-oscuro);
-      color: white;
-      text-align: center;
-      padding: 30px;
-      margin-top: 60px;
-    }
-
-    @media (max-width: 768px) {
-      header h1 { font-size: 2em; }
-      .productos { flex-direction: column; align-items: center; }
-    }
-  </style>
+  <meta name="description" content="Botiguy: tienda virtual con productos para peluquería, mascotas, autos y más. Variedad, calidad y precios accesibles.">
+  <meta name="keywords" content="botiguy, tienda, peluquería, barbería, mascotas, autos, productos variados">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
   <header>
-    <h1>🛍️ Botiguy</h1>
-    <p>Tu tienda virtual de productos variados y servicios especializados</p>
-    <a href="https://botiguy.demo-store.website" target="_blank" class="boton-tienda">
-      🛒 Ir a la tienda EMIDICA
-    </a>
+    <img src="images/logo.png" alt="Logo Botiguy" class="logo">
+    <h1>Botiguy</h1>
+    <p>Tu tienda virtual con estilo, variedad y confianza</p>
+    <a href="https://botiguy.demo-store.website" target="_blank" class="boton-tienda">🛒 Ir a la Tienda EMIDICA</a>
   </header>
 
   <nav>
-    <a href="#peluqueria">💈 Peluquería y Barbería</a>
-    <a href="#mascotas">🐶 Belleza Mascotas</a>
-    <a href="#automoviles">🚗 Automóviles</a>
-    <a href="#otros">🛒 Otros</a>
+    <div class="nav-left">
+      <img src="images/logo.png" alt="Icono Botiguy" class="nav-logo">
+      <h2>Botiguy</h2>
+    </div>
+    <div class="nav-right">
+      <a href="#peluqueria">💈 Peluquería</a>
+      <a href="#mascotas">🐾 Mascotas</a>
+      <a href="#automoviles">🚗 Autos</a>
+      <a href="#otros">🎁 Otros</a>
+    </div>
   </nav>
 
-  <!-- SECCIÓN PELUQUERÍA -->
+  <div class="search-bar">
+    <input type="text" placeholder="🔍 Busca productos o categorías...">
+  </div>
+
+  <!-- SECCIONES -->
   <section id="peluqueria">
     <h2>💈 Peluquería y Barbería</h2>
-    <p style="text-align:center;">Encuentra productos para el cuidado capilar, herramientas de barbería y artículos profesionales para tu negocio.</p>
+    <p>Productos y herramientas profesionales para barberías y peluquerías.</p>
     <div class="productos">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1588776814546-7d7e9c7a9b87?auto=format&fit=crop&w=600&q=80" alt="Máquina de cortar cabello">
+        <img src="images/peluqueria.jpg" alt="Máquina de corte">
         <div class="card-content">
-          <h3>Máquina de corte profesional</h3>
-          <p>Alta precisión, ideal para barberías.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1616209068374-bd7ffcff97cb?auto=format&fit=crop&w=600&q=80" alt="Tijeras de peluquería">
-        <div class="card-content">
-          <h3>Tijeras Premium</h3>
-          <p>Acero inoxidable con filo duradero.</p>
+          <h3>Máquina de Corte Pro</h3>
+          <p>Potente, precisa y duradera. Ideal para uso profesional.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECCIÓN MASCOTAS -->
   <section id="mascotas">
-    <h2>🐶 Belleza para Mascotas</h2>
-    <p style="text-align:center;">Productos de higiene, belleza y accesorios para consentir a tus mascotas.</p>
+    <h2>🐶 Belleza Mascotas</h2>
+    <p>Cuida y consiente a tus mascotas con nuestros productos de higiene y belleza.</p>
     <div class="productos">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1612538498947-7f61b0e9e4f3?auto=format&fit=crop&w=600&q=80" alt="Champú para perros">
+        <img src="images/mascotas.jpg" alt="Shampoo para mascotas">
         <div class="card-content">
-          <h3>Champú para perros</h3>
-          <p>Suaviza el pelaje y mantiene la piel saludable.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1556228453-efd0ebf6b7a7?auto=format&fit=crop&w=600&q=80" alt="Cepillo para mascotas">
-        <div class="card-content">
-          <h3>Cepillo antienredos</h3>
-          <p>Ideal para perros y gatos de pelo largo.</p>
+          <h3>Shampoo para Perros</h3>
+          <p>Cuida el pelaje y la piel de tus mascotas con suavidad.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECCIÓN AUTOMÓVILES -->
   <section id="automoviles">
     <h2>🚗 Automóviles</h2>
-    <p style="text-align:center;">Accesorios, herramientas y productos de limpieza para tu vehículo.</p>
+    <p>Todo para mantener tu vehículo impecable y con estilo.</p>
     <div class="productos">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1597006230943-9c9c5b4cba7c?auto=format&fit=crop&w=600&q=80" alt="Cera para autos">
+        <img src="images/autos.jpg" alt="Accesorios para autos">
         <div class="card-content">
-          <h3>Cera Premium</h3>
-          <p>Brillo intenso y protección UV.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80" alt="Kit de limpieza automotriz">
-        <div class="card-content">
-          <h3>Kit de limpieza</h3>
-          <p>Incluye shampoo, paños y aplicadores.</p>
+          <h3>Kit de Limpieza Premium</h3>
+          <p>Incluye paños, ceras y aplicadores profesionales.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SECCIÓN OTROS -->
   <section id="otros">
-    <h2>🛒 Otros Productos</h2>
-    <p style="text-align:center;">Además, Botiguy ofrece una amplia gama de productos para el hogar, tecnología y mucho más.</p>
+    <h2>🎁 Otros Productos</h2>
+    <p>Explora una variedad de artículos únicos para el hogar y tecnología.</p>
     <div class="productos">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=600&q=80" alt="Auriculares">
+        <img src="images/otros.jpg" alt="Decoración del hogar">
         <div class="card-content">
-          <h3>Auriculares Bluetooth</h3>
-          <p>Con cancelación de ruido y carga rápida.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="Decoración del hogar">
-        <div class="card-content">
-          <h3>Decoración para el hogar</h3>
-          <p>Estilo moderno y materiales ecológicos.</p>
+          <h3>Decoración Moderna</h3>
+          <p>Renueva tus espacios con estilo y diseño contemporáneo.</p>
         </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Botiguy | Todos los derechos reservados | <a href="https://botiguy.demo-store.website" target="_blank" style="color:#90caf9;">Visitar tienda EMIDICA</a></p>
+    <p>© 2025 Botiguy | Todos los derechos reservados</p>
+    <p>Visita nuestra tienda principal en <a href="https://botiguy.demo-store.website" target="_blank">EMIDICA</a></p>
+    <div class="social-icons">
+      <a href="#">📷</a>
+      <a href="#">📘</a>
+      <a href="#">💬</a>
+    </div>
   </footer>
 
 </body>
